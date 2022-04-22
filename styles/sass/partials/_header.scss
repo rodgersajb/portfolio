@@ -1,0 +1,24 @@
+header {
+    background-color: #242425;
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        ul {
+            display: flex;
+            
+            
+            li {
+                margin-right: 50px;
+                a {
+                    color: $navText;
+                    font-size: 2rem;
+                &:hover,
+                &:focus {
+                    color: $text;
+                    transition: 0.3s ease;
+                }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.mySkills {
+    h2 {
+        text-align: center;
+    }
+    .codeSkills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+        li {
+            width: calc(100%/4 - 40px);
+            padding-top: 50px;
+            i {
+                font-size: 6rem;
+            }
+        }
+    }
+}

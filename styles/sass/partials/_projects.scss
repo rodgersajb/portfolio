@@ -1,0 +1,29 @@
+.apps {
+    h2 {
+        text-align: center;
+        padding: 150px 0;
+    }
+    .imageContainer,
+    .contentContainer {
+        width: calc(100%/2 - 50px);
+    }
+    .imageContainer {
+        position: relative;
+    }
+    img:first-child {
+        width: 80%;
+        height: 50%;
+        border: 10px solid #1c1c1c;
+        position: relative;
+        z-index: 10;
+    }
+    img:nth-child(2) {
+        position: absolute;
+        bottom: 378px;
+        left: -54px;
+        width: 80%;
+        height: 47%;
+        
+    }
+   
+}

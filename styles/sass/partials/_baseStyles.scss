@@ -1,0 +1,63 @@
+.wrapper {
+    width: 90%;
+    max-width: 1580px;
+    margin: 0 auto;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $headingFont;
+    background-color: $background;
+    color: $text;
+}
+
+h1 {
+    font-size: 8rem;
+    
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 6rem;
+    
+}
+
+h3 {
+    font-size: 5rem;
+    
+}
+
+h4 {
+    font-size: 3rem;
+    
+}
+
+h5 {
+    font-size: 2rem;
+    
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+
+ul {
+    list-style: none;
+    
+    li {
+    
+        a {
+            
+            text-transform: uppercase;
+            text-decoration: none;
+            
+        }
+    }
+}
+
+.flexContainer {
+    display: flex;
+}

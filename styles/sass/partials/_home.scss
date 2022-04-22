@@ -1,0 +1,27 @@
+.Alex {
+    min-height: 90vh;
+    background-color: #242425;
+    h5,
+    h1,
+    p {
+        text-align: center;
+        
+    }
+    h5 {
+        padding-top: 250px;
+    }
+    h1 {
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            
+            border-bottom: 3px solid rgb(27, 57, 88);
+            
+            width: 0;
+            // -webkit-transition: 1s ease;
+
+
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.Bio {
+    margin-top: 250px;
+    .flexContainer {
+        justify-content: space-evenly;
+        .imageContainer,
+        .contentContainer {
+            width: calc(100%/2 - 100px);
+            
+        }
+        .imageContainer {
+            img {
+                width: 100%;
+                height: 50%;
+            }
+        }
+        .contentContainer {
+            p {
+                line-height: 3rem;
+            }
+            .social {
+                display: flex;
+                justify-content: space-evenly;
+                i {
+                    color: $navText;
+                    font-size: 3rem;
+                    padding-top: 50px;
+                    &:hover,
+                    &:focus {
+                        color: #88d4ab;
+                        transition: 0.3s ease;
+                    }
+                }
+                a {
+                    color: $navText;
+                    img {
+                        color: $navText;
+                    }
+                }
+            
+            }
+        }
+
+    }
+
+}
