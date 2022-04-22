@@ -106,28 +106,56 @@
             </ul>
         </div>
     </section>
-    <section id="Projects" class="apps">
-        <div class="wrapper">
-            <h2>Projects</h2>
-            <div class="flexContainer">
-                <div class="imageContainer">
-                    <img src="/images/tobias-reich-zRlj59LKty4-unsplash.jpg"
-                        alt="A crowd in an event hall being exposed to a bright light">
-                    <img src="/images/betterImageShadow.jpg" alt="image shadow">
-                        
-                </div>
-                <div class="contentContainer">
-                    <h3>The Event Finder <i class="devicon-html5-plain"></i><i class="devicon-css3-plain"></i><i
-                            class="devicon-javascript-plain"></i><i class="devicon-jquery-plain"></i></h3>
-                    <p>Looking for something to do tonight? Tomorrow? Next Month?</p>
-                    <p>The Event Finder is a simple search app that will return your search with twenty options based on
-                        location, date and price. Made with Vanilla JS and the Ticket Master API</p>
-                    <p><a href=""></a></p>
-                </div>
+    <section id="projects" class="apps">
+        <!-- <div class="wrapper"> -->
+        <h2>Projects</h2>
+
+        <div class="carousel">
+            <div class="container">
+
+                <ul>
+                    <li>
+                        <div class="imageContainer">
+                            <img src="/images/tobias-reich-zRlj59LKty4-unsplash.jpg"
+                                alt="A crowd in an event hall being exposed to a bright light">
+                            <!-- <img src="/images/betterImageShadow.jpg" alt="image shadow"> -->
+                        </div>
+                        <h3>The Event Finder <i class="devicon-html5-plain"></i><i class="devicon-css3-plain"></i><i
+                                class="devicon-javascript-plain"></i><i class="devicon-jquery-plain"></i></h3>
+                        <p>Looking for something to do tonight? Tomorrow? Next Month?</p>
+                        <p>The Event Finder is a simple search app that will return your search with twenty options based on
+                            location, date and price. Made with Vanilla JS and the Ticket Master API</p>
+                    </li>
+                    <li>
+                        <div class="imageContainer">
+                            <img src="/images/space.jpg" alt="Bright stars far away in a galaxy">
+                        </div>
+                        <h3>The Nasa Project</h3>
+                        <p>Explore our solar system</p>
+                        <p>Drop down menu which provides pictures of all the planets of our solar system. Made with Vanilla
+                            JS and the NASA API</p>
+                    </li>
+                    <li>
+                        <div class="imageContainer">
+                            <img src="/images/bridge.jpg" alt="A bridge from a birds eye view">
+                        </div>
+                        <h3>The Bridge Project</h3>
+                        <p>Not a project I did.....yet</p>
+                        <p>Like bridges? They're great aren't they? Let's find a bridge API and do some stuff</p>
+                    </li>
+                </ul>
+            </div>
 
 
+            <div class="buttonContainer">
+    
+    
+                <button class="prevButton"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="nextButton"><i class="fa-solid fa-angle-right"></i></button>
             </div>
         </div>
+
+        <!-- </div> -->
     </section>
     <section id="Contact" class="contact">
         <div class="wrapper">
@@ -142,14 +170,15 @@
                 </div>
             </div>
             <form action="">
-                
-                    <div class="container">
-                        <input type="text" id="text" placeholder="Your Name">
-                        <input type="email" id="email" placeholder="Your Email">
 
-                    </div>
-                    <div class="container">
-                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Contact..."></textarea>
+                <div class="container">
+                    <input type="text" id="text" placeholder="Your Name">
+                    <input type="email" id="email" placeholder="Your Email">
+
+                </div>
+                <div class="container">
+                    <textarea name="description" id="description" cols="30" rows="10"
+                        placeholder="Contact..."></textarea>
                     <input type="submit" value="Get in Touch">
                 </div>
             </form>
@@ -162,6 +191,8 @@
             </ul>
         </div>
     </section>
+
+    <script src="/script.js"></script>
 
 
 </body>
