@@ -17,20 +17,23 @@
                 width: 100%;            
                 padding: 0;                
                 li.current {
-                    border: 2px solid pink;
+                    
+                    opacity: 1;
                 }
                 li {
                     display: flex;
                     flex-direction: column;
                     flex: 0 0 100%;
+                    opacity: 0.25;
+                    padding: 0 20px 0 20px;
                     // width: calc(100%/3 - 50px);
                     .imageContainer {
                         position: relative;
-                    }
-                    img {
-                        width: 100%;
-                        height: 500px;
-                        object-fit: cover;
+                        img {
+                            width: 100%;
+                            height: 500px;
+                            object-fit: cover;
+                        }
                     }
                     // img:first-child {
                     //     width: 100%;
