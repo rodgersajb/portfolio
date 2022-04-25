@@ -347,11 +347,11 @@ header nav ul li a:hover, header nav ul li a:focus {
 }
 .Bio .flexContainer .imageContainer,
 .Bio .flexContainer .contentContainer {
-  width: calc(50% - 100px);
+  width: calc(50% - 50px);
 }
 .Bio .flexContainer .imageContainer img {
   width: 100%;
-  height: 50%;
+  height: 90%;
 }
 .Bio .flexContainer .contentContainer p {
   line-height: 3rem;
@@ -364,6 +364,7 @@ header nav ul li a:hover, header nav ul li a:focus {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-top: 50px;
+  padding-left: 0px;
 }
 .Bio .flexContainer .contentContainer .social .github i:hover, .Bio .flexContainer .contentContainer .social .github i:focus {
   color: #fff;
@@ -395,6 +396,7 @@ header nav ul li a:hover, header nav ul li a:focus {
   text-align: center;
 }
 .mySkills .codeSkills {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,6 +625,7 @@ header nav ul li a:hover, header nav ul li a:focus {
   width: 10%;
 }
 .contact .social {
+  padding-left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -652,4 +655,52 @@ header nav ul li a:hover, header nav ul li a:focus {
 .contact .social img {
   background-color: rgb(117, 116, 116);
   height: 3rem;
+}
+
+@media (max-width: 1070px) {
+  .bio .flexContainer .imageContainer img {
+    height: 80%;
+  }
+}
+@media (max-width: 976px) {
+  .Bio .flexContainer .imageContainer,
+.Bio .flexContainer .contentContainer {
+    width: calc(50% - 30px);
+  }
+}
+@media (max-width: 780px) {
+  .Bio h2 {
+    font-size: 4rem;
+  }
+  .Bio p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 700px) {
+  .Bio .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Bio .flexContainer .imageContainer,
+.Bio .flexContainer .contentContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .Bio .flexContainer .imageContainer img {
+    height: 400px;
+  }
+  .Bio .flexContainer .contentContainer h2 {
+    font-size: 6rem;
+    text-align: center;
+  }
+  .Bio .flexContainer .contentContainer p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 450px) {
+  .bio p {
+    text-align: center;
+  }
 }
