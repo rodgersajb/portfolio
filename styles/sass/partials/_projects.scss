@@ -26,7 +26,15 @@
                     flex: 0 0 100%;
                     opacity: 0.25;
                     padding: 0 20px 0 20px;
+                    transition: opacity 0.35s ease-in-out;
+                    h3,
+                    p {
+                        text-align: center;
+                    }
                     // width: calc(100%/3 - 50px);
+                    i {
+                        padding: 10px;
+                    }
                     .imageContainer {
                         position: relative;
                         img {
@@ -34,22 +42,9 @@
                             height: 500px;
                             object-fit: cover;
                         }
-                    }
-                    // img:first-child {
-                    //     width: 100%;
-                    //     // height: 50%;
-                    //     border: 10px solid #1c1c1c;
-                    //     position: relative;
-                    //     z-index: 10;
-                    // }
-                    // img:nth-child(2) {
-                    //     position: absolute;
-                    //     bottom: 378px;
-                    //     left: -54px;
-                    //     width: 80%;
-                    //     height: 47%;
                         
-                    // }
+                    }
+                    
         
                 }
             }

@@ -43,7 +43,7 @@
                 </div>
                 <div class="contentContainer">
                     <h2><span class="aboutMe">Abo</span>ut Me</h2>
-                        
+
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna
                         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -53,12 +53,14 @@
                         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                     <ul class="social">
-                        <li><a href="https://github.com/rodgersajb"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="https://twitter.com/Rodgersajb"></a><i class="fa-brands fa-twitter"></i></li>
-                        <li><a href="https://www.linkedin.com/in/alex-rodgers-snm/"><i
+                        <li class="github"><a href="https://github.com/rodgersajb"><i
+                                    class="fa-brands fa-github"></i></a></li>
+                        <li class="twitter"><a href="https://twitter.com/Rodgersajb"></a><i
+                                class="fa-brands fa-twitter"></i></li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/alex-rodgers-snm/"><i
                                     class="fa-brands fa-linkedin"></i></a></li>
-                        <li><a href="https://medium.com/@rodgersajb"><img src="/images/Medium.png"
-                                    alt="Medium logo"></a></li>
+                        <li class="medium"><a href="https://medium.com/@rodgersajb"><i
+                                    class="fa-brands fa-medium"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -96,11 +98,12 @@
                     <p>TERMINAL</p><i class="fa-solid fa-terminal"></i>
                 </li>
                 <li>
-                    <p>RESPONSIVE DESIGN</p><i class="fa-solid fa-laptop"></i><i class="fa-solid fa-arrow-right"></i><i
-                        class="fa-solid fa-tablet"></i><i class="fa-solid fa-arrow-right"></i><i
-                        class="fa-solid fa-mobile-retro"></i>
+                    <p>RESPONSIVE DESIGN</p><i class="fa-solid fa-display"></i>
                 </li>
-                <li></li>
+                <li>
+                    <p>CLIENT RELATIONS</p>
+                    <i class="fa-solid fa-people-group"></i>
+                </li>
                 <li>
                     <p>ACCESSIBILITY</p><i class="fa-solid fa-universal-access"></i>
                 </li>
@@ -121,26 +124,30 @@
                                 alt="A crowd in an event hall being exposed to a bright light">
                             <!-- <img src="/images/betterImageShadow.jpg" alt="image shadow"> -->
                         </div>
-                        <h3><span class="aboutMe">The E</span>vent Finder <i class="devicon-html5-plain"></i><i class="devicon-css3-plain"></i><i
-                                class="devicon-javascript-plain"></i><i class="devicon-jquery-plain"></i></h3>
+                        <h3><span class="aboutMe">The E</span>vent Finder <i class="devicon-html5-plain"></i><i
+                                class="devicon-css3-plain"></i><i class="devicon-javascript-plain"></i><i
+                                class="devicon-jquery-plain"></i></h3>
                         <p>Looking for something to do tonight? Tomorrow? Next Month?</p>
-                        <p>The Event Finder is a simple search app that will return your search with twenty options based on
+                        <p>The Event Finder is a simple search app that will return your search with twenty options
+                            based on
                             location, date and price. Made with Vanilla JS and the Ticket Master API</p>
                     </li>
                     <li>
                         <div class="imageContainer">
                             <img src="/images/space.jpg" alt="Bright stars far away in a galaxy">
                         </div>
-                        <h3><span class="aboutMe">The N</span>asa Project</h3>
+                        <h3><span class="aboutMe">The N</span>asa Project<i class="devicon-html5-plain"></i><i class="devicon-css3-plain"></i><i class="devicon-javascript-plain"></i><i class="devicon-sass-original"></i></h3>
                         <p>Explore our solar system</p>
-                        <p>Drop down menu which provides pictures of all the planets of our solar system. Made with Vanilla
+                        <p>Drop down menu which provides pictures of all the planets of our solar system. Made with
+                            Vanilla
                             JS and the NASA API</p>
                     </li>
                     <li>
                         <div class="imageContainer">
-                            <img src="/images/bridge.jpg" alt="A bridge from a birds eye view">
+                            <img src="/images/plant-unsplash.jpg" alt="A bridge from a birds eye view">
                         </div>
-                        <h3><span class="aboutMe">The B</span>ridge Project</h3>
+                        <h3><span class="aboutMe">Plan</span>ted Invitation<i class="devicon-html5-plain"></i><i class="devicon-css3-plain"></i><i class="devicon-javascript-plain"></i><i
+                            class="devicon-sass-original"></i></h3>
                         <p>Not a project I did.....yet</p>
                         <p>Like bridges? They're great aren't they? Let's find a bridge API and do some stuff</p>
                     </li>
@@ -149,8 +156,8 @@
 
 
             <div class="buttonContainer">
-    
-    
+
+
                 <button class="prevButton"><i class="fa-solid fa-angle-left"></i></button>
                 <button class="nextButton"><i class="fa-solid fa-angle-right"></i></button>
             </div>
@@ -160,17 +167,18 @@
     </section>
     <section id="Contact" class="contact">
         <div class="wrapper">
+            <h2><span class="aboutMe">Get</span> in Touch</h2>
             <div class="flexContainer">
                 <div class="contentContainer">
                     <i class="fa-solid fa-phone"></i>
-                    <p>905-447-3836</p>
+                    <a href="tel:9054473836">905-447-3836</a>
                 </div>
                 <div class="contentContainer">
                     <i class="fa-solid fa-envelope"></i>
-                    <p>rodgersajb@gmail.com</p>
+                    <a href="mailto:rodgersajb@gmail.com">rodgersajb@gmail.com</a>
                 </div>
             </div>
-            <form action="">
+            <!-- <form action="">
 
                 <div class="container">
                     <input type="text" id="text" placeholder="Your Name">
@@ -182,13 +190,14 @@
                         placeholder="Contact..."></textarea>
                     <input type="submit" value="Get in Touch">
                 </div>
-            </form>
+            </form> -->
             <ul class="social">
-                <li><a href="https://github.com/rodgersajb"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://twitter.com/Rodgersajb"></a><i class="fa-brands fa-twitter"></i></li>
-                <li><a href="https://www.linkedin.com/in/alex-rodgers-snm/"><i class="fa-brands fa-linkedin"></i></a>
+                <li class="github"><a href="https://github.com/rodgersajb"><i class="fa-brands fa-github"></i></a></li>
+                <li class="twitter"><a href="https://twitter.com/Rodgersajb"></a><i class="fa-brands fa-twitter"></i>
                 </li>
-                <li><a href="https://medium.com/@rodgersajb"><img src="./images/Medium.png" alt="Medium logo"></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/in/alex-rodgers-snm/"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li class="medium"><a href="https://medium.com/@rodgersajb"><i class="fa-brands fa-medium"></i></a></li>
             </ul>
         </div>
     </section>

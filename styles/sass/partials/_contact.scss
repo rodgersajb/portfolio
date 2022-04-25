@@ -1,5 +1,8 @@
 .contact {
     margin-top: 200px;
+    h2 {
+        text-align: center;
+    }
     .flexContainer {
         width: 75%;
         margin: 0 auto;
@@ -23,8 +26,11 @@
                             
                 
             }
-            p {
+            a {
                 font-size: 3rem;
+                color: #fff;
+                text-decoration: none;
+                margin-top: 40px;
             }
         }
     }
@@ -123,13 +129,60 @@
     }
 
     .social {
+        
+        .github {
+        i {
+    
+            &:hover,
+            &:focus {
+                color: #fff;
+            }
+        }
+    }
+    
+    .twitter {
+        i {
+    
+            &:hover,
+            &:focus {
+                color: #1da1f2;
+            }
+        }
+    }
+    
+    .linkedin {
+        i {
+    
+            &:hover,
+            &:focus {
+                color: #0077b5;
+            }
+        }
+    }
+    
+    .medium {
+        i {
+    
+            &:hover,
+            &:focus {
+                color: #fff;
+            }
+        }
+    }
+
         display: flex;
         width: 50%;
         margin: auto;
+        margin-top: 40px;
         justify-content: space-between;
         i {
             font-size: 3rem;
             color: $navText;
+        }
+        img {
+            background-color: $navText;
+            height: 3rem;
+            
         }
     }
     

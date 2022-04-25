@@ -325,6 +325,7 @@ header nav ul li a:hover, header nav ul li a:focus {
 }
 .Alex h5 {
   padding-top: 250px;
+  margin-top: 0px;
 }
 .Alex h1 {
   position: relative;
@@ -362,22 +363,32 @@ header nav ul li a:hover, header nav ul li a:focus {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-top: 50px;
+}
+.Bio .flexContainer .contentContainer .social .github i:hover, .Bio .flexContainer .contentContainer .social .github i:focus {
+  color: #fff;
+}
+.Bio .flexContainer .contentContainer .social .twitter i:hover, .Bio .flexContainer .contentContainer .social .twitter i:focus {
+  color: #1da1f2;
+}
+.Bio .flexContainer .contentContainer .social .linkedin i:hover, .Bio .flexContainer .contentContainer .social .linkedin i:focus {
+  color: #0077b5;
+}
+.Bio .flexContainer .contentContainer .social .medium i:hover, .Bio .flexContainer .contentContainer .social .medium i:focus {
+  color: #fff;
 }
 .Bio .flexContainer .contentContainer .social i {
   color: rgb(117, 116, 116);
   font-size: 3rem;
-  padding-top: 50px;
 }
 .Bio .flexContainer .contentContainer .social i:hover, .Bio .flexContainer .contentContainer .social i:focus {
-  color: #88d4ab;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.Bio .flexContainer .contentContainer .social a {
-  color: rgb(117, 116, 116);
-}
-.Bio .flexContainer .contentContainer .social a img {
-  color: rgb(117, 116, 116);
+.Bio .flexContainer .contentContainer .social img {
+  background-color: rgb(117, 116, 116);
+  height: 3rem;
 }
 
 .mySkills h2 {
@@ -440,6 +451,15 @@ header nav ul li a:hover, header nav ul li a:focus {
           flex: 0 0 100%;
   opacity: 0.25;
   padding: 0 20px 0 20px;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.apps .carousel .container ul li h3,
+.apps .carousel .container ul li p {
+  text-align: center;
+}
+.apps .carousel .container ul li i {
+  padding: 10px;
 }
 .apps .carousel .container ul li .imageContainer {
   position: relative;
@@ -468,6 +488,9 @@ header nav ul li a:hover, header nav ul li a:focus {
 
 .contact {
   margin-top: 200px;
+}
+.contact h2 {
+  text-align: center;
 }
 .contact .flexContainer {
   width: 75%;
@@ -500,8 +523,11 @@ header nav ul li a:hover, header nav ul li a:focus {
   padding: 30px;
   margin: 0 auto;
 }
-.contact .flexContainer .contentContainer p {
+.contact .flexContainer .contentContainer a {
   font-size: 3rem;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 40px;
 }
 .contact form {
   margin-top: 200px;
@@ -602,11 +628,28 @@ header nav ul li a:hover, header nav ul li a:focus {
   display: flex;
   width: 50%;
   margin: auto;
+  margin-top: 40px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.contact .social .github i:hover, .contact .social .github i:focus {
+  color: #fff;
+}
+.contact .social .twitter i:hover, .contact .social .twitter i:focus {
+  color: #1da1f2;
+}
+.contact .social .linkedin i:hover, .contact .social .linkedin i:focus {
+  color: #0077b5;
+}
+.contact .social .medium i:hover, .contact .social .medium i:focus {
+  color: #fff;
+}
 .contact .social i {
   font-size: 3rem;
   color: rgb(117, 116, 116);
+}
+.contact .social img {
+  background-color: rgb(117, 116, 116);
+  height: 3rem;
 }
