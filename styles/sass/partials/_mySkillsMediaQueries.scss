@@ -1,0 +1,49 @@
+@media (max-width: 890px) {
+    .mySkills {
+        .codeSkills {
+            li {
+                width: calc(30% - 40px);
+            }
+        }
+    }
+}
+
+@media (max-width: 624px) {
+    .mySkills {
+        .codeSkills {
+            li {
+                width: calc(37% - 40pxS);
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .mySkills {
+        .codeSkills {
+            li {
+                width: 33%;
+                padding-left: 20px;
+                
+                i {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .mySkills {
+        .codeSkills {
+            li {
+                p {
+                    font-size: 1.4rem;
+                }
+                i {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}

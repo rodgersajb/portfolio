@@ -408,7 +408,7 @@ header nav ul li a:hover, header nav ul li a:focus {
 }
 .mySkills .codeSkills li {
   width: calc(25% - 40px);
-  padding-top: 50px;
+  padding: 50px 0 0 40px;
 }
 .mySkills .codeSkills li i {
   font-size: 6rem;
@@ -657,6 +657,33 @@ header nav ul li a:hover, header nav ul li a:focus {
   height: 3rem;
 }
 
+@media (max-width: 890px) {
+  .mySkills .codeSkills li {
+    width: calc(30% - 40px);
+  }
+}
+@media (max-width: 624px) {
+  .mySkills .codeSkills li {
+    width: calc(37% - 40pxS);
+  }
+}
+@media (max-width: 520px) {
+  .mySkills .codeSkills li {
+    width: 33%;
+    padding-left: 20px;
+  }
+  .mySkills .codeSkills li i {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 420px) {
+  .mySkills .codeSkills li p {
+    font-size: 1.4rem;
+  }
+  .mySkills .codeSkills li i {
+    font-size: 4rem;
+  }
+}
 @media (max-width: 1070px) {
   .bio .flexContainer .imageContainer img {
     height: 80%;
@@ -702,5 +729,26 @@ header nav ul li a:hover, header nav ul li a:focus {
 @media (max-width: 450px) {
   .bio p {
     text-align: center;
+  }
+}
+@media (max-width: 1026px) {
+  .apps h3 i {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .apps .carousel .container {
+    width: 90%;
+  }
+  .apps .carousel .container h3 {
+    font-size: 4rem;
+  }
+  .apps .carousel .container .imageContainer img {
+    height: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .apps .container h3 {
+    font-size: 4rem;
   }
 }

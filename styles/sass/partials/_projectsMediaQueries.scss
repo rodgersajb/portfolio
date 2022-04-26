@@ -1,0 +1,39 @@
+@media (max-width: 1026px) {
+    .apps {
+        h3 {
+            i {
+                font-size: 4rem;
+            }
+        }
+}
+}
+
+@media (max-width: 576px) {
+    .apps {
+        .carousel {
+            .container {
+                width: 90%;
+                h3 {
+                    font-size: 4rem;
+                }
+                .imageContainer {
+                    img {
+                        height: 350px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+   .apps {
+    .container {
+
+        h3 {
+            font-size: 4rem;
+            }
+    }
+}
+}
