@@ -14,8 +14,7 @@
     header {
         nav {
             ul {
-                position: absolute;
-                right: -1234px;
+                display: none;
             }
             i {
                 visibility: visible;
@@ -23,8 +22,7 @@
             }
         }
         .slideOutNav {
-            position: absolute;
-            left: -4500px;
+            
         }
     
     }

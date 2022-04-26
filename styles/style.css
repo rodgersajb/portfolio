@@ -291,22 +291,22 @@ header {
 header .alexFace {
   position: absolute;
   left: 0;
-  padding-left: 15px;
+  padding-left: 1;
 }
 header .slideOutNav {
   z-index: 500;
-  -webkit-transition: ease-in-out 0.7s;
-  transition: ease-in-out 0.7s;
+  -webkit-transition: ease 0.7s;
+  transition: ease 0.7s;
   height: 100vh;
   width: 100%;
   background-color: #242425;
-  position: absolute;
-  left: -2500px;
+  display: none;
 }
 header .slideOutNav .x i {
   font-size: 3rem;
   position: absolute;
   right: 0;
+  padding-right: 20px;
 }
 header .slideOutNav .slideOutUl {
   padding: 0;
@@ -766,14 +766,9 @@ footer p {
 }
 @media (max-width: 640px) {
   header nav ul {
-    position: absolute;
-    right: -1234px;
+    display: none;
   }
   header nav i {
     visibility: visible;
-  }
-  header .slideOutNav {
-    position: absolute;
-    left: -4500px;
   }
 }

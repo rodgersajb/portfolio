@@ -142,13 +142,17 @@ const header = document.querySelector('h1')
 
 hamburger.addEventListener('click', (event) => {
   if (event.target.tagName === 'I') {
-    slideOutNav.style.left = '0px'
+    slideOutNav.style.display = 'block'
+    console.log(event)
+    hamburger.style.visibility = "hidden"
+    
   }
 })
 
 theX.addEventListener('click', (event) => {
   if (event.target.tagName == 'I') {
-    slideOutNav.style.left = '-2500px'
+    slideOutNav.style.display = 'none'
+    hamburger.style.visibility = 'visible'
   }
 })
 
