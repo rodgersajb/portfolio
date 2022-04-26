@@ -3,7 +3,7 @@ class Carousel {
   // pass target HTML element to be basis of carousel
   constructor(element) {
     // initialize carousel index to 0
-    console.log(this);
+    
     this.index = 0;
 
     // initialize carousel lock state and duration
@@ -60,7 +60,7 @@ class Carousel {
     for (let i = 0; i < this.list.length; i++) {
       // bind click event to each carousel item
       this.list[i].addEventListener("click", (event) => {
-        console.log(event)
+        
         event.preventDefault();
 
         // on click of item set carousel index to that value
@@ -138,7 +138,7 @@ const slideOutNav = document.querySelector('.slideOutNav');
 const hamburger = document.querySelector('.fa-bars');
 const theX = document.querySelector('.fa-xmark')
 const header = document.querySelector('h1')
-console.log(theX)
+
 
 hamburger.addEventListener('click', (event) => {
   if (event.target.tagName === 'I') {
