@@ -386,10 +386,10 @@ header nav ul li a:hover, header nav ul li a:focus {
 }
 .Bio .flexContainer .imageContainer img {
   width: 100%;
-  height: 90%;
+  height: 98%;
 }
 .Bio .flexContainer .contentContainer p {
-  line-height: 3rem;
+  line-height: 2.4rem;
 }
 .Bio .flexContainer .contentContainer .social {
   display: -webkit-box;
