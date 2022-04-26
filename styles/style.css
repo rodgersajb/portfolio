@@ -296,6 +296,13 @@ header nav {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+header nav i {
+  position: absolute;
+  left: 0;
+  font-size: 4rem;
+  padding: 2rem;
+  visibility: hidden;
+}
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,99 +538,6 @@ header nav ul li a:hover, header nav ul li a:focus {
   text-decoration: none;
   margin-top: 40px;
 }
-.contact form {
-  margin-top: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.contact form .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.contact form .container input[type=text],
-.contact form .container input[type=email] {
-  padding: 10px;
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-  background-color: transparent;
-}
-.contact form .container input[type=text] {
-  margin-bottom: 35px;
-}
-.contact form .container textarea {
-  background-color: transparent;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  padding: 20px;
-  border-left: none;
-  border-right: none;
-}
-.contact form .container input[type=submit] {
-  background: black;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  height: 40px;
-  width: 150px;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  margin-top: 40px;
-  font-weight: 600;
-  position: relative;
-  border: transparent;
-}
-.contact form .container input[type=submit]:after,
-.contact form .container input[type=submit]::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  -webkit-transition: all 0.4s, opacity 0.1s 0.4s;
-  transition: all 0.4s, opacity 0.1s 0.4s;
-  opacity: 0;
-}
-.contact form .container input[type=submit]:after:hover, .contact form .container input[type=submit]:after:focus,
-.contact form .container input[type=submit]::before:hover,
-.contact form .container input[type=submit]::before:focus {
-  width: calc(100% + 10px);
-  height: 100%;
-  -webkit-transition: 0.4s, opacity 0.1s;
-  transition: 0.4s, opacity 0.1s;
-  opacity: 1;
-}
-.contact form .container input[type=submit]:after {
-  bottom: 0;
-  right: 0;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
-}
-.contact form .container input[type=submit]:before {
-  top: 0;
-  left: 0;
-  border-left: 3px solid #fff;
-  border-top: 3px solid #fff;
-}
-.contact form .container:first-child {
-  width: 33%;
-}
-.contact form .container:nth-child(2) {
-  width: 60%;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-.contact form textarea {
-  width: 90%;
-}
-.contact form input[type=submit] {
-  width: 10%;
-}
 .contact .social {
   padding-left: 0px;
   display: -webkit-box;
@@ -649,7 +563,7 @@ header nav ul li a:hover, header nav ul li a:focus {
   color: #fff;
 }
 .contact .social i {
-  font-size: 3rem;
+  font-size: 5rem;
   color: rgb(117, 116, 116);
 }
 .contact .social img {
@@ -749,6 +663,35 @@ header nav ul li a:hover, header nav ul li a:focus {
 }
 @media (max-width: 500px) {
   .apps .container h3 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 430px) {
+  .apps .carousel .container h3 {
+    font-size: 3rem;
+  }
+  .apps .carousel .container h3 i {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 890px) {
+  .contact .flexContainer {
+    width: 95%;
+  }
+}
+@media (max-width: 680px) {
+  .contact .flexContainer .contentContainer a {
+    font-size: 2rem;
+  }
+  .contact .social {
+    width: 75%;
+  }
+}
+@media (max-width: 450px) {
+  .contact .flexContainer .contentContainer a {
+    font-size: 1.6rem;
+  }
+  .contact .social i {
     font-size: 4rem;
   }
 }

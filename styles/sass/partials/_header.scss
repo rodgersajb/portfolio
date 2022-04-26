@@ -4,6 +4,14 @@ header {
     nav {
         display: flex;
         justify-content: flex-end;
+        i {
+            position: absolute;
+            left: 0;
+            font-size: 4rem;
+            padding: 2rem;
+            visibility: hidden
+            
+        }
         ul {
             display: flex;
             

@@ -37,3 +37,18 @@
     }
 }
 }
+@media (max-width: 430px) {
+    .apps {
+        .carousel {
+
+            .container {
+                h3 {
+                    font-size: 3rem;
+                    i {
+                        font-size: 2.5rem;
+                    }
+                }
+        }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@media (max-width: 890px) {
+    .contact {
+        .flexContainer {
+            width: 95%;
+        }
+    }
+}
+
+@media (max-width:680px) {
+    .contact {
+        .flexContainer {
+            .contentContainer {
+                a {
+                    font-size: 2rem;
+                }
+            }
+        }
+        .social {
+            width: 75%;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .contact {
+        .flexContainer {
+            .contentContainer {
+                a {
+                    font-size: 1.6rem;
+                }
+            }
+            
+        }
+        .social {
+            i {
+                font-size: 4rem;
+            }
+        }
+    }
+}
