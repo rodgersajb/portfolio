@@ -137,6 +137,7 @@ const slideOutNav = document.querySelector('.slideOutNav');
 
 const hamburger = document.querySelector('.fa-bars');
 const theX = document.querySelector('.fa-xmark')
+const header = document.querySelector('h1')
 console.log(theX)
 
 hamburger.addEventListener('click', (event) => {
