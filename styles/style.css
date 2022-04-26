@@ -495,6 +495,10 @@ header nav ul li a:hover, header nav ul li a:focus {
 .apps .carousel .container ul li p {
   text-align: center;
 }
+.apps .carousel .container ul li a {
+  color: rgb(117, 116, 116);
+  font-size: 2.2rem;
+}
 .apps .carousel .container ul li i {
   padding: 10px;
 }
@@ -529,6 +533,12 @@ header nav ul li a:hover, header nav ul li a:focus {
 .contact h2 {
   text-align: center;
 }
+.contact .alex {
+  font-size: 2.4rem;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 100px;
+}
 .contact .flexContainer {
   width: 75%;
   margin: 0 auto;
@@ -551,6 +561,7 @@ header nav ul li a:hover, header nav ul li a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 100px;
 }
 .contact .flexContainer .contentContainer i {
   text-align: center;
@@ -597,6 +608,18 @@ header nav ul li a:hover, header nav ul li a:focus {
 .contact .social img {
   background-color: rgb(117, 116, 116);
   height: 3rem;
+}
+
+footer {
+  background-color: #242425;
+  margin-top: 50px;
+}
+footer p {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
 }
 
 @media (max-width: 890px) {
