@@ -543,6 +543,7 @@ header nav ul li a:hover, header nav ul li a:focus {
   width: 90%;
   margin: auto;
   margin-bottom: 100px;
+  text-align: center;
 }
 .contact .flexContainer {
   width: 75%;
