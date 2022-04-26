@@ -288,6 +288,11 @@ ul li a {
 header {
   background-color: #242425;
 }
+header .alexFace {
+  position: absolute;
+  left: 0;
+  padding-left: 15px;
+}
 header .slideOutNav {
   z-index: 500;
   -webkit-transition: ease-in-out 0.7s;
@@ -744,6 +749,11 @@ footer p {
   }
   .contact .social i {
     font-size: 4rem;
+  }
+}
+@media (max-width: 788px) {
+  .alexFace {
+    visibility: hidden;
   }
 }
 @media (max-width: 760px) {

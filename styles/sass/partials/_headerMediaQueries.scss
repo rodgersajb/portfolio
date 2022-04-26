@@ -1,3 +1,9 @@
+@media (max-width: 788px) {
+    .alexFace {
+        visibility: hidden;
+    
+    }
+}
 @media (max-width: 760px) {
     header nav {
         justify-content: center;
@@ -20,5 +26,6 @@
             position: absolute;
             left: -4500px;
         }
+       
     }
 }

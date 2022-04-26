@@ -1,5 +1,10 @@
 header {
     background-color: #242425;
+    .alexFace {
+        position: absolute;
+        left: 0;
+        padding-left: 15px;
+    }
     .slideOutNav {
         z-index: 500;
         transition: ease-in-out 0.7s;
