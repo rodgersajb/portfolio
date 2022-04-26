@@ -1,5 +1,34 @@
 header {
     background-color: #242425;
+    .slideOutNav {
+        z-index: 500;
+        transition: ease-in-out 0.7s;
+        .x {
+            i {
+                font-size: 3rem;
+                position: absolute;
+                right: 0;
+            }
+        }
+        height: 100vh;
+        width: 100%;
+        
+        background-color: #242425;
+        .slideOutUl {
+            padding: 0;
+            li {
+                margin-top: 50px;
+                text-align: center;
+                a {
+                    color: #fff;
+                    font-family: $headingFont;
+                    font-size: 5rem;
+                    text-align: center;
+                    
+                }
+            }
+        }
+    }
     
     nav {
         display: flex;

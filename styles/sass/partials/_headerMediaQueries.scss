@@ -1,0 +1,24 @@
+@media (max-width: 760px) {
+    header nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        nav {
+            ul {
+                position: absolute;
+                right: -1234px;
+            }
+            i {
+                visibility: visible;
+                
+            }
+        }
+        .slideOutNav {
+            position: absolute;
+            left: -4500px;
+        }
+    }
+}

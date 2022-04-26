@@ -130,3 +130,25 @@ const carousel = new Carousel(document.querySelector("#projects .carousel"));
 
 // create instance of carousel with #carousel2 element
 // const carousel2 = new Carousel(document.querySelector("#carousel2"));
+
+//slide out Nav
+
+const slideOutNav = document.querySelector('.slideOutNav');
+
+const hamburger = document.querySelector('.fa-bars');
+const theX = document.querySelector('.fa-xmark')
+console.log(theX)
+
+hamburger.addEventListener('click', (event) => {
+  if (event.target.tagName === 'I') {
+    slideOutNav.style.left = '0px'
+  }
+})
+
+theX.addEventListener('click', (event) => {
+  if (event.target.tagName == 'I') {
+    slideOutNav.style.left = '-2500px'
+  }
+})
+
+
