@@ -157,3 +157,20 @@ theX.addEventListener('click', (event) => {
 })
 
 
+// Target all the sections and the header and paragraph tags to change on toggle
+
+let sections = document.querySelector('section')
+
+
+// const paragraphs = sections.document.querySelectorAll('p')
+
+
+const toggle = document.querySelector('#toggle')
+
+toggle.addEventListener('click', function(e) {
+  console.log(e.target)
+  if (e.target.tagName === 'INPUT') {    
+    sections.style.background = '#fff';
+}
+})
+

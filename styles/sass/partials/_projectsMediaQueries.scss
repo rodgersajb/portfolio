@@ -12,7 +12,7 @@
     .apps {
         .carousel {
             .container {
-                width: 90%;
+                width: 100%;
                 h3 {
                     font-size: 4rem;
                 }
@@ -23,6 +23,9 @@
 
                 }
             }
+        }
+        .buttonContainer {
+            width: 100%;
         }
     }
 }

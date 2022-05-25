@@ -390,11 +390,56 @@ header nav ul li a:hover, header nav ul li a:focus {
   width: calc(50% - 50px);
 }
 .Bio .flexContainer .imageContainer img {
-  width: 100%;
-  height: 98%;
+  width: 75%;
+  height: 92%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Bio .flexContainer .contentContainer #toggle {
+  display: none;
+}
+.Bio .flexContainer .contentContainer .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.Bio .flexContainer .contentContainer .button::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  place-content: center;
+  line-height: 0;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  -webkit-transform: 1s ease-in;
+          transform: 1s ease-in;
+}
+.Bio .flexContainer .contentContainer #toggle:checked + .button::after {
+  content: "";
+  background-color: #161a1c;
+  -webkit-transform: translateX(50px) rotate(360deg);
+          transform: translateX(50px) rotate(360deg);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 .Bio .flexContainer .contentContainer p {
-  line-height: 2.4rem;
+  line-height: 3.4rem;
 }
 .Bio .flexContainer .contentContainer .social {
   display: -webkit-box;
@@ -459,11 +504,12 @@ header nav ul li a:hover, header nav ul li a:focus {
   padding: 150px 0;
 }
 .apps .carousel {
+  position: relative;
   width: 100%;
   overflow: hidden;
 }
 .apps .carousel .container {
-  width: 75%;
+  width: 100%;
   margin: auto;
 }
 .apps .carousel .container ul {
@@ -500,6 +546,13 @@ header nav ul li a:hover, header nav ul li a:focus {
 .apps .carousel .container ul li p {
   text-align: center;
 }
+.apps .carousel .container ul li h3 .gesture a,
+.apps .carousel .container ul li p .gesture a {
+  font-size: 1.8rem;
+  color: #fff;
+  text-transform: lowercase;
+  text-decoration: underline;
+}
 .apps .carousel .container ul li a {
   color: rgb(117, 116, 116);
   font-size: 2.2rem;
@@ -523,13 +576,27 @@ header nav ul li a:hover, header nav ul li a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 30%;
+  width: 100%;
+  position: absolute;
+  top: 25%;
   margin: auto;
   gap: 1rem;
 }
+.apps .carousel .buttonContainer .prevButton,
+.apps .carousel .buttonContainer .nextButton {
+  opacity: 0.2;
+  border: none;
+  color: black;
+  border-radius: 5px;
+}
+.apps .carousel .buttonContainer .prevButton:hover, .apps .carousel .buttonContainer .prevButton:focus,
+.apps .carousel .buttonContainer .nextButton:hover,
+.apps .carousel .buttonContainer .nextButton:focus {
+  opacity: 1;
+}
 .apps .carousel .buttonContainer i {
   font-size: 5rem;
-  background-color: transparent;
+  opacity: 1;
 }
 
 .contact {
@@ -709,13 +776,16 @@ footer p {
 }
 @media (max-width: 576px) {
   .apps .carousel .container {
-    width: 90%;
+    width: 100%;
   }
   .apps .carousel .container h3 {
     font-size: 4rem;
   }
   .apps .carousel .container .imageContainer img {
     height: 350px;
+  }
+  .apps .buttonContainer {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
