@@ -11,6 +11,12 @@ body {
     font-family: $headingFont;
     background-color: $background;
     color: $text;
+    transition: ease-in-out 0.5s;
+}
+
+body.active {
+    background-color: rgb(195, 194, 194);
+    color: black;
 }
 
 h1 {
@@ -64,4 +70,8 @@ ul {
 
 .aboutMe {
     background-image: url(/images/aboutMeShadow.jpg);
+}
+
+.aboutMe.active {
+    color: #fff;
 }

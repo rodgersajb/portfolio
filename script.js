@@ -166,11 +166,39 @@ let sections = document.querySelector('section')
 
 
 const toggle = document.querySelector('#toggle')
+const body = document.querySelector('body')
+const aboutMe = document.querySelectorAll('.aboutMe')
+console.log(aboutMe)
+
 
 toggle.addEventListener('click', function(e) {
-  console.log(e.target)
-  if (e.target.tagName === 'INPUT') {    
-    sections.style.background = '#fff';
-}
+  body.classList.toggle('active')
+  aboutMe.classList.toggle('active')
 })
 
+// const firstGreeting = ['Hello,']
+let textPosition = 0;
+const speed = 150;
+const halfSpeed = 200;
+
+// helloTyping = () => {
+//   document.querySelector('.hello').
+//   innerHTML= firstGreeting[0].substring(0, textPosition)
+
+//   if(textPosition++ != greetingArray[0].length)
+//   setTimeout(helloTyping, halfSpeed)
+// }
+
+const greetingArray = ["I'm Alex Rodgers"]
+
+
+typing = () => {
+  document.querySelector('.frontEnd').
+  innerHTML = greetingArray[0].substring(0, textPosition) 
+
+  if(textPosition++ != greetingArray[0].length)
+  setTimeout(typing, speed)
+}
+
+// window.addEventListener('load', helloTyping)
+window.addEventListener('load', typing)

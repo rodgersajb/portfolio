@@ -8,6 +8,24 @@
 }
 }
 
+@media (max-width: 582px) {
+    .apps {
+        .carousel {
+            .container {
+                ul {
+                    li {
+                        .imageContainer {
+                            img {
+                                height: 350px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .apps {
         .carousel {
@@ -30,6 +48,7 @@
     }
 }
 
+
 @media (max-width: 500px) {
    .apps {
     .container {
@@ -46,9 +65,9 @@
 
             .container {
                 h3 {
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                     i {
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                     }
                 }
         }

@@ -30,11 +30,13 @@
                 cursor: pointer;
             }
             .button::after {
-                content: '';
+                content: url('/images/sun-regular.svg');
+                
                 width: 40px;
                 height: 40px;
-                background-color: yellow;
+                background-color: #e1e4e6;
                 border: 2px solid #fff;
+                background-color: rgb(216, 230, 59);
                 border-radius: 50%;
                 box-shadow: 0 0 5px;
                 position: absolute;
@@ -46,10 +48,12 @@
                 transition: ease-in-out 0.5s;
                 transform: 1s ease-in;
             }
-
+            
+          
             #toggle:checked + .button::after {
-                content: '';
-                background-color: #161a1c;
+                content: url('/images/moon-solid.svg');
+                background-color: #e1e4e6;
+                // color: yellow;
                 transform: translateX(50px) rotate(360deg);
                 transition: ease-in-out 0.5s;
                 

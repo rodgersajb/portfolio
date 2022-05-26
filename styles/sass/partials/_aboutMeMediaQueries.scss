@@ -36,6 +36,10 @@
     .Bio {
         .flexContainer {
             flex-direction: column;
+            .imageContainer {
+                display: flex;
+                justify-content: center;
+            }
             .imageContainer,
             .contentContainer {
                 width: 90%;
@@ -59,10 +63,22 @@
     }
 }
 
-@media (max-width: 450px) {
-    .bio {
-        p {
-            text-align: center;
+// @media (max-width: 450px) {
+//     .Bio {
+//         p {
+//             text-align: center;
+//         }
+//     }
+// }
+
+@media (max-width: 400px) {
+    .Bio {
+        .flexContainer {
+            .imageContainer {
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 }

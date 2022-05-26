@@ -240,6 +240,13 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #000;
   color: #fff;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+body.active {
+  background-color: rgb(195, 194, 194);
+  color: black;
 }
 
 h1 {
@@ -283,6 +290,10 @@ ul li a {
 
 .aboutMe {
   background-image: url(/images/aboutMeShadow.jpg);
+}
+
+.aboutMe.active {
+  color: #fff;
 }
 
 header {
@@ -410,11 +421,12 @@ header nav ul li a:hover, header nav ul li a:focus {
   cursor: pointer;
 }
 .Bio .flexContainer .contentContainer .button::after {
-  content: "";
+  content: url("/images/sun-regular.svg");
   width: 40px;
   height: 40px;
-  background-color: yellow;
+  background-color: #e1e4e6;
   border: 2px solid #fff;
+  background-color: rgb(216, 230, 59);
   border-radius: 50%;
   -webkit-box-shadow: 0 0 5px;
           box-shadow: 0 0 5px;
@@ -431,8 +443,8 @@ header nav ul li a:hover, header nav ul li a:focus {
           transform: 1s ease-in;
 }
 .Bio .flexContainer .contentContainer #toggle:checked + .button::after {
-  content: "";
-  background-color: #161a1c;
+  content: url("/images/moon-solid.svg");
+  background-color: #e1e4e6;
   -webkit-transform: translateX(50px) rotate(360deg);
           transform: translateX(50px) rotate(360deg);
   -webkit-transition: ease-in-out 0.5s;
@@ -748,6 +760,14 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .Bio .flexContainer .imageContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .Bio .flexContainer .imageContainer,
 .Bio .flexContainer .contentContainer {
     width: 90%;
@@ -764,14 +784,19 @@ footer p {
     font-size: 1.8rem;
   }
 }
-@media (max-width: 450px) {
-  .bio p {
-    text-align: center;
+@media (max-width: 400px) {
+  .Bio .flexContainer .imageContainer img {
+    width: 100%;
   }
 }
 @media (max-width: 1026px) {
   .apps h3 i {
     font-size: 4rem;
+  }
+}
+@media (max-width: 582px) {
+  .apps .carousel .container ul li .imageContainer img {
+    height: 350px;
   }
 }
 @media (max-width: 576px) {
@@ -795,10 +820,10 @@ footer p {
 }
 @media (max-width: 430px) {
   .apps .carousel .container h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .apps .carousel .container h3 i {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 890px) {
