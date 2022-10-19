@@ -196,7 +196,7 @@ navMenu.addEventListener("click", (e) => {
   console.log(e);
   navMenu.classList.toggle("active");
   slideOutNav.classList.toggle("active");
-  alex.style.z-index == '0';
+  // alex.style.z-index == '0';
   
   console.log(slideOutNav);
 
