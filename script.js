@@ -153,26 +153,6 @@ const carousel = new Carousel(document.querySelector("#projects .carousel"));
 
 const slideOutNav = document.querySelector(".slideOutNav");
 
-// const hamburger = document.querySelector('.fa-bars');
-// const theX = document.querySelector('.fa-xmark')
-// const header = document.querySelector('h1')
-
-// hamburger.addEventListener('click', (event) => {
-//   if (event.target.tagName === 'I') {
-//     slideOutNav.style.display = 'block'
-//     console.log(event)
-//     hamburger.style.visibility = "hidden"
-
-//   }
-// })
-
-// theX.addEventListener('click', (event) => {
-//   if (event.target.tagName == 'I') {
-//     slideOutNav.style.display = 'none'
-//     hamburger.style.visibility = 'visible'
-//   }
-// })
-
 // Target all the sections and the header and paragraph tags to change on toggle
 
 let sections = document.querySelector("section");
@@ -200,9 +180,7 @@ navMenu.addEventListener("click", (e) => {
   
   console.log(slideOutNav);
 
-  // e.target.tagName === "DIV" ? slideOutNav.classList.toggle("active") : null;
-
-  // e.target.tagName === "DIV" ? slideOutNav.style.display = 'block' : null;
+  
 });
 
 
