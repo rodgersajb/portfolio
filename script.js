@@ -1,9 +1,28 @@
+// const firstGreeting = ['Hello,']
+let textPosition = 0;
+const speed = 150;
+const halfSpeed = 200;
+
+const typing = () => {
+  document.querySelector(".frontEnd").innerHTML = greetingArray[0].substring(
+    0,
+    textPosition
+  );
+
+  textPosition++ != greetingArray[0].length ? setTimeout(typing, speed) : null;
+};
+
+const greetingArray = ["I'm Alex Rodgers"];
+
+// window.addEventListener('load', helloTyping)
+window.addEventListener("load", typing);
+
 // define carousel class
 class Carousel {
   // pass target HTML element to be basis of carousel
   constructor(element) {
     // initialize carousel index to 0
-    
+
     this.index = 0;
 
     // initialize carousel lock state and duration
@@ -60,7 +79,6 @@ class Carousel {
     for (let i = 0; i < this.list.length; i++) {
       // bind click event to each carousel item
       this.list[i].addEventListener("click", (event) => {
-        
         event.preventDefault();
 
         // on click of item set carousel index to that value
@@ -133,53 +151,61 @@ const carousel = new Carousel(document.querySelector("#projects .carousel"));
 
 //slide out Nav
 
-const slideOutNav = document.querySelector('.slideOutNav');
+const slideOutNav = document.querySelector(".slideOutNav");
 
-const hamburger = document.querySelector('.fa-bars');
-const theX = document.querySelector('.fa-xmark')
-const header = document.querySelector('h1')
+// const hamburger = document.querySelector('.fa-bars');
+// const theX = document.querySelector('.fa-xmark')
+// const header = document.querySelector('h1')
 
+// hamburger.addEventListener('click', (event) => {
+//   if (event.target.tagName === 'I') {
+//     slideOutNav.style.display = 'block'
+//     console.log(event)
+//     hamburger.style.visibility = "hidden"
 
-hamburger.addEventListener('click', (event) => {
-  if (event.target.tagName === 'I') {
-    slideOutNav.style.display = 'block'
-    console.log(event)
-    hamburger.style.visibility = "hidden"
-    
-  }
-})
+//   }
+// })
 
-theX.addEventListener('click', (event) => {
-  if (event.target.tagName == 'I') {
-    slideOutNav.style.display = 'none'
-    hamburger.style.visibility = 'visible'
-  }
-})
-
+// theX.addEventListener('click', (event) => {
+//   if (event.target.tagName == 'I') {
+//     slideOutNav.style.display = 'none'
+//     hamburger.style.visibility = 'visible'
+//   }
+// })
 
 // Target all the sections and the header and paragraph tags to change on toggle
 
-let sections = document.querySelector('section')
-
+let sections = document.querySelector("section");
 
 // const paragraphs = sections.document.querySelectorAll('p')
 
+const toggle = document.querySelector("#toggle");
+const body = document.querySelector("body");
+const aboutMe = document.querySelectorAll(".aboutMe");
+const alex = document.querySelector('.Alex')
+console.log(aboutMe);
 
-const toggle = document.querySelector('#toggle')
-const body = document.querySelector('body')
-const aboutMe = document.querySelectorAll('.aboutMe')
-console.log(aboutMe)
+toggle.addEventListener("click", function (e) {
+  body.classList.toggle("active");
+  aboutMe.forEach((text) => text.classList.toggle("active"));
+});
+
+const navMenu = document.querySelector(".navMenu");
+
+navMenu.addEventListener("click", (e) => {
+  console.log(e);
+  navMenu.classList.toggle("active");
+  slideOutNav.classList.toggle("active");
+  alex.style.z-index == '0';
+  
+  console.log(slideOutNav);
+
+  // e.target.tagName === "DIV" ? slideOutNav.classList.toggle("active") : null;
+
+  // e.target.tagName === "DIV" ? slideOutNav.style.display = 'block' : null;
+});
 
 
-toggle.addEventListener('click', function(e) {
-  body.classList.toggle('active')
-  aboutMe.classList.toggle('active')
-})
-
-// const firstGreeting = ['Hello,']
-let textPosition = 0;
-const speed = 150;
-const halfSpeed = 200;
 
 // helloTyping = () => {
 //   document.querySelector('.hello').
@@ -189,16 +215,4 @@ const halfSpeed = 200;
 //   setTimeout(helloTyping, halfSpeed)
 // }
 
-const greetingArray = ["I'm Alex Rodgers"]
 
-
-typing = () => {
-  document.querySelector('.frontEnd').
-  innerHTML = greetingArray[0].substring(0, textPosition) 
-
-  if(textPosition++ != greetingArray[0].length)
-  setTimeout(typing, speed)
-}
-
-// window.addEventListener('load', helloTyping)
-window.addEventListener('load', typing)
