@@ -183,14 +183,30 @@ navMenu.addEventListener("click", (e) => {
   
 });
 
+const sliders = document.querySelectorAll('.slide-in')
 
+const appearOptions = {
+  threshold: 0.3,
+  rootMargin: "0px 0px -100px 0px"
+}
 
-// helloTyping = () => {
-//   document.querySelector('.hello').
-//   innerHTML= firstGreeting[0].substring(0, textPosition)
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+){
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add('appear');
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions)
 
-//   if(textPosition++ != greetingArray[0].length)
-//   setTimeout(helloTyping, halfSpeed)
-// }
+sliders.forEach(slider => {
+  appearOnScroll.observe(slider);
+})
 
 

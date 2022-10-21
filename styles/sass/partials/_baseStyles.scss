@@ -75,3 +75,32 @@ ul {
 .aboutMe.active {
     color: #fff;
 }
+
+.from-left {
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.from-right {
+    transform: translateX(50%);
+    opacity: 0;
+}
+
+.from-left.appear {
+    transform: translateX(0);
+    opacity: 1;
+
+}
+
+.from-right.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.from-left,
+.from-right {
+    transition: 
+    opacity 250ms ease-in,
+    transform 400ms ease-in;
+    
+}
