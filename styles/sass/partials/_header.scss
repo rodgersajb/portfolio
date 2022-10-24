@@ -1,24 +1,50 @@
 header {
     background-color: #242425;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
     .alexFace {
-        position: absolute;
+        position: relative;
+        transform: translateX(-50%);
         left: 0;
-        padding-left: 1;
+        z-index: 10;
+        
+    }
+    // .alexFace::before,
+    // .alexFace::after {
+    //     content: '';
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    // }
+    // .alexFace::before {
+    //     z-index: 100;
+    // }
+
+    // .alexFace:hover::after {
+    //     background-color: rgb(248, 211, 217);
+    //     animation: pulse 900ms infinite;
+    //     position: absolute;
+    //     border-radius: 55%;
+    // }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(0.75);
+            opacity: 0.75;
+        } 
+        100% {
+            transform: scale(1);
+            opacity: 0;
+        }
     }
     .slideOutNav {
         // z-index: 500;
         transition: ease 0.7s;
-        // .x {
-        //     i {
-        //         font-size: 3rem;
-        //         position: absolute;
-        //         right: 0;
-        //         padding-right: 20px;
-        //     }
-        // }
         height: 100vh;
-        width: 0;
-        
+        width: 0;        
         background-color: #262627;
         position: absolute;
         overflow-x: hidden;
@@ -54,14 +80,7 @@ header {
     nav {
         display: flex;
         justify-content: flex-end;
-        // i {
-        //     position: absolute;
-        //     left: 0;
-        //     font-size: 4rem;
-        //     padding: 2rem;
-        //     visibility: hidden
-            
-        // }
+    
         .navMenu {
             position: absolute;
             right: 0;
@@ -111,6 +130,7 @@ header {
 
 
         ul {
+            
             display: flex;
             
             
@@ -123,6 +143,7 @@ header {
                 &:focus {
                     color: $text;
                     transition: 0.3s ease;
+                    transform: translateY(5%);
                 }
                 }
             }
