@@ -87,6 +87,7 @@ ul {
     opacity: 0;
 }
 
+
 .from-left.appear {
     transform: translateX(0);
     opacity: 1;
@@ -99,7 +100,8 @@ ul {
 }
 
 .from-left,
-.from-right {
+.from-right,
+.from-bottom {
     transition: 
     opacity 250ms ease-in,
     transform 400ms ease-in;
@@ -115,4 +117,14 @@ ul {
     50% {
         opacity: 0;
     }
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+    transition-delay: 2.7s;
+}
+
+.fade-in.appear {
+    opacity: 1;
 }

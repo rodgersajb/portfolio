@@ -322,7 +322,8 @@ ul li a {
 }
 
 .from-left,
-.from-right {
+.from-right,
+.from-bottom {
   -webkit-transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
   transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
   transition: opacity 250ms ease-in, transform 400ms ease-in;
@@ -345,6 +346,18 @@ ul li a {
     opacity: 0;
   }
 }
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in;
+  -webkit-transition-delay: 2.7s;
+          transition-delay: 2.7s;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 header {
   background-color: #242425;
 }

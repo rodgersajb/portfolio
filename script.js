@@ -184,6 +184,7 @@ app.navMenu.addEventListener("click", (e) => {
 });
 
 app.sliders = document.querySelectorAll('.slide-in')
+app.faders = document.querySelectorAll('.fade-in')
 
 app.appearOptions = {
   threshold: 0.3,
@@ -207,6 +208,10 @@ app.appearOptions)
 
 app.sliders.forEach(slider => {
   app.appearOnScroll.observe(slider);
+})
+
+app.faders.forEach(fader => {
+  app.appearOnScroll.observe(fader);
 })
 
 app.init = () => {
