@@ -329,6 +329,22 @@ ul li a {
   transition: opacity 250ms ease-in, transform 400ms ease-in, -webkit-transform 400ms ease-in;
 }
 
+.blink {
+  -webkit-animation: blinker 1s infinite;
+          animation: blinker 1s infinite;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 header {
   background-color: #242425;
 }
@@ -458,6 +474,8 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+  z-index: 999;
 }
 header nav ul li {
   margin-right: 50px;

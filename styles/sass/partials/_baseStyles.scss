@@ -105,3 +105,14 @@ ul {
     transform 400ms ease-in;
     
 }
+
+.blink{
+    animation: blinker 1s infinite;
+    
+}
+
+@keyframes blinker{
+    50% {
+        opacity: 0;
+    }
+}

@@ -1,21 +1,22 @@
+const app = {}
 // const firstGreeting = ['Hello,']
 let textPosition = 0;
-const speed = 150;
+const speed = 100;
 const halfSpeed = 200;
 
-const typing = () => {
-  document.querySelector(".frontEnd").innerHTML = greetingArray[0].substring(
+app.typing = () => {
+  document.querySelector(".frontEnd").innerHTML = app.greetingArray[0].substring(
     0,
     textPosition
-  );
+  ) + `<span class="blink">_</span>`;
 
-  textPosition++ != greetingArray[0].length ? setTimeout(typing, speed) : null;
+  textPosition++ != app.greetingArray[0].length ? setTimeout(app.typing, speed) : null;
 };
 
-const greetingArray = ["I'm Alex Rodgers"];
+app.greetingArray = ["I'm Alex Rodgers"];
 
 // window.addEventListener('load', helloTyping)
-window.addEventListener("load", typing);
+// window.addEventListener("load", app.typing);
 
 // define carousel class
 class Carousel {
@@ -159,20 +160,19 @@ let sections = document.querySelector("section");
 
 // const paragraphs = sections.document.querySelectorAll('p')
 
-const toggle = document.querySelector("#toggle");
-const body = document.querySelector("body");
-const aboutMe = document.querySelectorAll(".aboutMe");
-const alex = document.querySelector('.Alex')
-console.log(aboutMe);
+app.toggle = document.querySelector("#toggle");
+app.body = document.querySelector("body");
+app.aboutMe = document.querySelectorAll(".aboutMe");
+app.alex = document.querySelector('.Alex')
 
-toggle.addEventListener("click", function (e) {
+app.toggle.addEventListener("click", function (e) {
   body.classList.toggle("active");
   aboutMe.forEach((text) => text.classList.toggle("active"));
 });
 
-const navMenu = document.querySelector(".navMenu");
+app.navMenu = document.querySelector(".navMenu");
 
-navMenu.addEventListener("click", (e) => {
+app.navMenu.addEventListener("click", (e) => {
   console.log(e);
   navMenu.classList.toggle("active");
   slideOutNav.classList.toggle("active");
@@ -183,14 +183,14 @@ navMenu.addEventListener("click", (e) => {
   
 });
 
-const sliders = document.querySelectorAll('.slide-in')
+app.sliders = document.querySelectorAll('.slide-in')
 
-const appearOptions = {
+app.appearOptions = {
   threshold: 0.3,
   rootMargin: "0px 0px -100px 0px"
 }
 
-const appearOnScroll = new IntersectionObserver(function (
+app.appearOnScroll = new IntersectionObserver(function (
   entries,
   appearOnScroll
 ){
@@ -203,10 +203,14 @@ const appearOnScroll = new IntersectionObserver(function (
     }
   });
 },
-appearOptions)
+app.appearOptions)
 
-sliders.forEach(slider => {
-  appearOnScroll.observe(slider);
+app.sliders.forEach(slider => {
+  app.appearOnScroll.observe(slider);
 })
 
+app.init = () => {
+  app.typing();
+}
 
+app.init();
