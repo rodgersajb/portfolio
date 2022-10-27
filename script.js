@@ -166,16 +166,16 @@ app.aboutMe = document.querySelectorAll(".aboutMe");
 app.alex = document.querySelector('.Alex')
 
 app.toggle.addEventListener("click", function (e) {
-  body.classList.toggle("active");
-  aboutMe.forEach((text) => text.classList.toggle("active"));
+  app.body.classList.toggle("active");
+  app.aboutMe.forEach((text) => text.classList.toggle("active"));
 });
 
 app.navMenu = document.querySelector(".navMenu");
 
 app.navMenu.addEventListener("click", (e) => {
   console.log(e);
-  navMenu.classList.toggle("active");
-  slideOutNav.classList.toggle("active");
+  app.navMenu.classList.toggle("active");
+  app.slideOutNav.classList.toggle("active");
   // alex.style.z-index == '0';
   
   console.log(slideOutNav);
