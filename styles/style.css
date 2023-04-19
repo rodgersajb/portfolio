@@ -708,15 +708,21 @@ header nav ul li a:hover, header nav ul li a:focus {
   color: rgb(117, 116, 116);
   font-size: 2.2rem;
 }
+.apps .carousel .container ul li a i {
+  font-size: 3rem;
+}
 .apps .carousel .container ul li i {
   padding: 10px;
 }
 .apps .carousel .container ul li .imageContainer {
   position: relative;
 }
+.apps .carousel .container ul li .imageContainer .i-c-d {
+  background: blur;
+}
 .apps .carousel .container ul li .imageContainer img {
   width: 100%;
-  height: 500px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -741,6 +747,7 @@ header nav ul li a:hover, header nav ul li a:focus {
   border: none;
   color: black;
   border-radius: 5px;
+  cursor: pointer;
 }
 .apps .carousel .buttonContainer .prevButton:hover, .apps .carousel .buttonContainer .prevButton:focus,
 .apps .carousel .buttonContainer .nextButton:hover,
@@ -882,7 +889,7 @@ footer p {
 }
 @media (max-width: 976px) {
   .Bio .flexContainer .imageContainer,
-.Bio .flexContainer .contentContainer {
+  .Bio .flexContainer .contentContainer {
     width: calc(50% - 30px);
   }
 }
@@ -910,7 +917,7 @@ footer p {
             justify-content: center;
   }
   .Bio .flexContainer .imageContainer,
-.Bio .flexContainer .contentContainer {
+  .Bio .flexContainer .contentContainer {
     width: 90%;
     margin: 0 auto;
   }
